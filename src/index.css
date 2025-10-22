@@ -353,10 +353,12 @@ body {
 /* Animation Classes */
 .animate-fade-in {
     animation: fadeInUp 1s ease-out;
+    opacity: 1; /* S'assurer que l'opacité est à 1 après l'animation */
 }
 
 .animate-fade-in-delay {
     animation: fadeInUp 1s ease-out 0.3s both;
+    opacity: 1; /* S'assurer que l'opacité est à 1 après l'animation */
 }
 
 .animate-fade-in-delay-2 {
@@ -593,6 +595,17 @@ html {
 /* Hero Section pour les pages avec contenu opaque */
 .hero-section-small.opaque .hero-overlay {
     background: rgba(0, 123, 255, 0.85);
+}
+
+/* Styles pour les titres dans hero-section-small */
+.hero-section-small h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-section-small .lead {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 /* Timeline pour la page projet */
