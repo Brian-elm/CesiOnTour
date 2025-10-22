@@ -8,6 +8,7 @@ import ProgressBar from './components/ProgressBar.jsx'
 import Donate from './pages/Donate.jsx'
 import Legal from './pages/Legal.jsx'
 import Privacy from './pages/Privacy.jsx'
+import Team from './pages/Team.jsx'
 import { useEffect } from 'react'
 
 function HomePage() {
@@ -101,7 +102,7 @@ function HomePage() {
             ))}
           </div>
           <div className="text-center mt-4">
-            <a href="#team" className="btn btn-outline-primary">
+            <a href="/team" className="btn btn-outline-primary">
               <i className="fas fa-users me-2"></i>Voir Toute l'Équipe
             </a>
           </div>
@@ -245,6 +246,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/donate" element={<Donate />} />
+      <Route path="/team" element={<Team />} />
       <Route path="/legal" element={<Legal />} />
       <Route path="/privacy" element={<Privacy />} />
     </Routes>

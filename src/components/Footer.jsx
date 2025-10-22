@@ -14,7 +14,7 @@ export default function Footer() {
             <h5>Liens Rapides</h5>
             <ul className="list-unstyled">
               <li><a href="/#project" className="text-decoration-none text-white">Notre Projet</a></li>
-              <li><a href="/#team" className="text-decoration-none text-white">Notre Équipe</a></li>
+              <li><a href="/team" className="text-decoration-none text-white">Notre Équipe</a></li>
               <li><a href="/donate" className="text-decoration-none text-white">Faire un Don</a></li>
               <li><a href="/#contact" className="text-decoration-none text-white">Contact</a></li>
             </ul>
