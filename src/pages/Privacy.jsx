@@ -8,16 +8,17 @@ export default function Privacy() {
       
       {/* Hero Section */}
       <section className="hero-section-small opaque">
-        <div className="hero-overlay"></div>
-        <div className="container h-100">
-          <div className="row h-100 align-items-center">
-            <div className="col-lg-8 mx-auto text-center text-white">
-              <h1 className="display-4 fw-bold mb-4 animate-fade-in">
-                Politique de Confidentialité
-              </h1>
-              <p className="lead mb-4 animate-fade-in-delay">
-                Protection de vos données personnelles - RGPD
-              </p>
+        <div className="hero-overlay">
+          <div className="container h-100">
+            <div className="row h-100 align-items-center">
+              <div className="col-lg-8 mx-auto text-center text-white">
+                <h1 className="display-4 fw-bold mb-4 animate-fade-in">
+                  Politique de Confidentialité
+                </h1>
+                <p className="lead mb-4 animate-fade-in-delay">
+                  Protection de vos données personnelles - RGPD
+                </p>
+              </div>
             </div>
           </div>
         </div>

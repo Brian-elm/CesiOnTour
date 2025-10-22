@@ -79,17 +79,18 @@ export default function Donate() {
       
       {/* Hero Section */}
       <section className="hero-section-small opaque">
-        <div className="hero-overlay"></div>
-        <div className="container h-100">
-          <div className="row h-100 align-items-center">
-            <div className="col-lg-8 mx-auto text-center text-white">
-              <h1 className="display-4 fw-bold mb-4 animate-fade-in">
-                Soutenez Notre Projet
-              </h1>
-              <p className="lead mb-4 animate-fade-in-delay">
-                Chaque don nous rapproche de notre objectif. 
-                Aidez-nous à vivre cette expérience unique à Dublin !
-              </p>
+        <div className="hero-overlay">
+          <div className="container h-100">
+            <div className="row h-100 align-items-center">
+              <div className="col-lg-8 mx-auto text-center text-white">
+                <h1 className="display-4 fw-bold mb-4 animate-fade-in">
+                  Soutenez Notre Projet
+                </h1>
+                <p className="lead mb-4 animate-fade-in-delay">
+                  Chaque don nous rapproche de notre objectif. 
+                  Aidez-nous à vivre cette expérience unique à Dublin !
+                </p>
+              </div>
             </div>
           </div>
         </div>
