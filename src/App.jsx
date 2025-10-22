@@ -119,10 +119,10 @@ function HomePage() {
           </div>
           <div className="row align-items-center">
             {[
-              { icon: 'fa-university text-primary', title: "CESI École d'Ingénieurs" },
-              { icon: 'fa-handshake text-success', title: 'Association Étudiante' },
-              { icon: 'fa-building text-warning', title: 'Entreprises Locales' },
-              { icon: 'fa-heart text-danger', title: 'Donateurs Privés' },
+              { logo: '/images/Logo_cesi_2022.png', title: "CESI École d'Ingénieurs" },
+              { logo: '/images/association.png', title: 'Association Étudiante' },
+              { logo: '/images/entreprise.png', title: 'Entreprises Locales' },
+              { logo: '/images/donateur.png', title: 'Donateurs Privés' },
             ].map((p) => (
               <PartnerLogo key={p.title} {...p} />
             ))}
@@ -245,8 +245,8 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/donate" element={<Donate />} />
-      <Route path="/mentions-legales" element={<Legal />} />
-      <Route path="/politique-confidentialite" element={<Privacy />} />
+      <Route path="/legal" element={<Legal />} />
+      <Route path="/privacy" element={<Privacy />} />
     </Routes>
   )
 }
