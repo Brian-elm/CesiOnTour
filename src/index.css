@@ -1,0 +1,874 @@
+/* ===== CESI to Dublin 2026 - Custom Styles ===== */
+
+/* Variables CSS */
+:root {
+    --cesi-blue: #0F8EF2;
+    --cesi-blue-dark: #0B6BC7;
+    --cesi-blue-light: #4DA6F5;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --dark-gray: #343a40;
+    --success-green: #28a745;
+    --warning-orange: #ffc107;
+    --danger-red: #dc3545;
+    --font-primary: 'Inter', sans-serif;
+}
+
+/* Reset et Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--dark-gray);
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(135deg, var(--cesi-blue) 0%, var(--cesi-blue-dark) 100%) !important;
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--cesi-blue-light) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: var(--cesi-blue-light);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--cesi-blue) 0%, var(--cesi-blue-dark) 50%, #6c5ce7 100%);
+    background-image: url('/images/l19.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.8) 0%, rgba(0, 86, 179, 0.8) 50%, rgba(108, 92, 231, 0.8) 100%);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-section .lead {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.hero-section .btn {
+    animation: fadeInUp 1s ease-out 0.6s both;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar Section */
+.progress-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.progress {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    border-radius: 15px;
+    position: relative;
+    transition: width 2s ease-in-out;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--success-green);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.team-card {
+    background: var(--white);
+}
+
+.team-photo {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-photo img {
+    transform: scale(1.1);
+}
+
+.news-card {
+    background: var(--white);
+}
+
+.news-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Partner Logos */
+.partner-logo {
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--cesi-blue) 0%, var(--cesi-blue-dark) 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--cesi-blue-dark) 0%, var(--cesi-blue) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, var(--warning-orange) 0%, #e0a800 100%);
+    border: none;
+    color: var(--dark-gray);
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #e0a800 0%, var(--warning-orange) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+    color: var(--dark-gray);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--cesi-blue);
+    color: var(--cesi-blue);
+}
+
+.btn-outline-primary:hover {
+    background: var(--cesi-blue);
+    border-color: var(--cesi-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-outline-light:hover {
+    background: var(--white);
+    color: var(--cesi-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--cesi-blue);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fadeInUp 1s ease-out;
+}
+
+.animate-fade-in-delay {
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.animate-fade-in-delay-2 {
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-in-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-in-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Counter Animation */
+.counter {
+    transition: all 0.3s ease;
+}
+
+/* Social Links */
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--cesi-blue) !important;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--dark-gray) 0%, #2c3e50 100%);
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--cesi-blue-light) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+        background-attachment: scroll;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+    
+    .d-flex.gap-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .d-flex.gap-3 .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .progress-container {
+        padding: 1.5rem;
+    }
+    
+    .counter {
+        font-size: 2rem;
+    }
+    
+    .team-photo {
+        height: 200px;
+    }
+    
+    .partner-logo {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+    
+    .progress-container {
+        padding: 1rem;
+    }
+    
+    .counter {
+        font-size: 1.8rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .partner-logo {
+        padding: 1rem;
+    }
+    
+    .partner-logo i {
+        font-size: 2.5rem !important;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.loading {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.loaded {
+    opacity: 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cesi-blue);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cesi-blue-dark);
+}
+
+/* Project Image */
+.project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 300px;
+}
+
+.project-image img {
+    max-height: 400px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Scroll offset for fixed navbar */
+html {
+    scroll-padding-top: 80px;
+}
+
+/* Utility Classes */
+.text-cesi-blue {
+    color: var(--cesi-blue) !important;
+}
+
+.bg-cesi-blue {
+    background-color: var(--cesi-blue) !important;
+}
+
+.shadow-cesi {
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2) !important;
+}
+
+/* ===== STYLES POUR LES PAGES SUPPLEMENTAIRES ===== */
+
+/* Hero Section pour les pages secondaires */
+.hero-section-small {
+    height: 60vh;
+    background: linear-gradient(135deg, var(--cesi-blue) 0%, var(--cesi-blue-dark) 50%, #6c5ce7 100%);
+    background-image: url('/images/l19.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 76px; /* Compenser la navbar fixe */
+}
+
+/* Hero Section pour les pages avec contenu opaque */
+.hero-section-small.opaque .hero-overlay {
+    background: rgba(0, 123, 255, 0.85);
+}
+
+/* Timeline pour la page projet */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--cesi-blue);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 3rem;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 3rem;
+    text-align: left;
+}
+
+.timeline-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    z-index: 2;
+}
+
+.timeline-item:nth-child(odd) .timeline-marker {
+    right: -10px;
+}
+
+.timeline-item:nth-child(even) .timeline-marker {
+    left: -10px;
+}
+
+.timeline-content {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    right: -20px;
+    border-left-color: var(--white);
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    left: -20px;
+    border-right-color: var(--white);
+}
+
+/* Budget breakdown */
+.budget-item {
+    margin-bottom: 2rem;
+}
+
+.budget-item h5 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+}
+
+/* Donation methods */
+.donation-method {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.donation-method:hover {
+    border-color: var(--cesi-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.amount-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.amount-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.donation-impact {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: var(--white);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    color: var(--warning-orange);
+}
+
+/* Contact form */
+.contact-form-card {
+    background: var(--white);
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.contact-info-card {
+    background: var(--white);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.team-contact-card {
+    background: var(--white);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.team-contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Partner cards */
+.partner-card {
+    background: var(--white);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.partner-details {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Donors grid */
+.donors-grid {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.donor-category {
+    margin-bottom: 2rem;
+}
+
+.donor-category:last-child {
+    margin-bottom: 0;
+}
+
+.donor-list {
+    margin-top: 1rem;
+}
+
+/* Team skills badges */
+.team-skills {
+    margin-top: 1rem;
+}
+
+.team-skills .badge {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 3rem !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+    
+    .timeline-marker {
+        left: 10px !important;
+        right: auto !important;
+    }
+    
+    .timeline-content::before {
+        left: -20px !important;
+        right: auto !important;
+        border-right-color: var(--white) !important;
+        border-left-color: transparent !important;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .hero-section-small {
+        height: 50vh;
+        margin-top: 70px;
+    }
+    
+    .contact-form-card .card-body {
+        padding: 2rem !important;
+    }
+    
+    .donors-grid {
+        padding: 1.5rem;
+    }
+    
+    .timeline-content {
+        padding: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .btn,
+    footer {
+        display: none !important;
+    }
+    
+    .hero-section,
+    .hero-section-small {
+        height: auto;
+        background: none !important;
+        color: var(--dark-gray) !important;
+    }
+    
+    .hero-overlay {
+        display: none !important;
+    }
+}
