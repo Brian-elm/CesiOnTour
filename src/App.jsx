@@ -245,8 +245,8 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/donate" element={<Donate />} />
-      <Route path="/mentions-legales" element={<Legal />} />
-      <Route path="/politique-confidentialite" element={<Privacy />} />
+      <Route path="/legal" element={<Legal />} />
+      <Route path="/privacy" element={<Privacy />} />
     </Routes>
   )
 }
