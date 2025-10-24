@@ -5,6 +5,7 @@ import Footer from './components/Footer.jsx'
 import TeamCard from './components/TeamCard.jsx'
 import PartnerLogo from './components/PartnerLogo.jsx'
 import ProgressBar from './components/ProgressBar.jsx'
+import ContactForm from './components/ContactForm.jsx'
 import Donate from './pages/Donate.jsx'
 import Legal from './pages/Legal.jsx'
 import Privacy from './pages/Privacy.jsx'
@@ -202,29 +203,7 @@ function HomePage() {
                 <h2>Contactez-Nous</h2>
                 <p className="lead">Une question ? Une suggestion ? N'hésitez pas à nous écrire !</p>
               </div>
-              <form id="contactForm" className="row g-3">
-                <div className="col-md-6">
-                  <label htmlFor="firstName" className="form-label">Prénom</label>
-                  <input type="text" className="form-control" id="firstName" required />
-                </div>
-                <div className="col-md-6">
-                  <label htmlFor="lastName" className="form-label">Nom</label>
-                  <input type="text" className="form-control" id="lastName" required />
-                </div>
-                <div className="col-12">
-                  <label htmlFor="email" className="form-label">Email</label>
-                  <input type="email" className="form-control" id="email" required />
-                </div>
-                <div className="col-12">
-                  <label htmlFor="message" className="form-label">Message</label>
-                  <textarea className="form-control" id="message" rows={5} required></textarea>
-                </div>
-                <div className="col-12 text-center">
-                  <button type="submit" className="btn btn-primary btn-lg px-5">
-                    <i className="fas fa-paper-plane me-2"></i>Envoyer le Message
-                  </button>
-                </div>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
