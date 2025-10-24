@@ -8,33 +8,31 @@ export default function Team() {
   // Données complètes de l'équipe
   const teamMembers = [
     { 
-      name: 'Shein', 
-      role: 'Chef de Projet', 
+      name: 'Shirin', 
+      role: 'Déléguée', 
       img: '/images/Shein.png', 
-      desc: 'Développement des relations avec les entreprises partenaires.',
-      skills: ['Business Development', 'Négociation', 'Réseautage'],
-      email: 'shein@cesiontour2026.com',
-      linkedin: 'https://linkedin.com/in/shein',
+      desc: 'Alternante au CHRU de Nancy',
+      skills: ['Communication', 'Négociation', 'Réseautage'],
+      email: 'shirin.akbarzadeh@viacesi.fr',
+      linkedin: 'https://linkedin.com/in/shirin',
       responsibilities: [
-        'Recherche de partenaires',
-        'Négociation des accords',
-        'Suivi des relations partenaires',
-        'Développement du réseau'
+        'Co-Directrice de l\'association CESI On Tour'
       ]
     },
     { 
       name: 'Benjamin', 
-      role: 'Responsable Communication', 
+      role: 'Etudiant ', 
       img: '/images/Benjamin.png', 
-      desc: 'Gestion du budget et de la collecte de fonds.',
-      skills: ['Gestion financière', 'Collecte de fonds', 'Analyse budgétaire'],
-      email: 'dimitriq@cesiontour2026.com',
-      linkedin: 'https://linkedin.com/in/dimitriq',
+      desc: 'Alternant chez FTZ Informatique',
+      skills: ['Gestion financière', 'Collecte de fonds', 'Analyse budgétaire', 'Gestion de projet', 'Gestion de ressources'],
+      email: 'benjamin.rapt@viacesi.fr',
+      linkedin: 'https://linkedin.com/in/benjamin-rapt',
       responsibilities: [
-        'Gestion du budget global',
-        'Suivi des dépenses',
-        'Coordination de la collecte de fonds',
-        'Rapports financiers'
+        'Co-Directeur de l\'association CESI On Tour',
+        'Gestion du budget',
+        'Gestion des ressources',
+        'Gestion des événements',
+        'Gestion des relations avec les entreprises partenaires'
       ]
     }
   ];
@@ -43,11 +41,11 @@ export default function Team() {
   const promotionMembers = [
     {
       name: 'Brian',
-      role: 'Développeur Web',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Développement et maintenance du site web du projet.',
+      role: 'Etudiant',
+      img: '/images/Brian.png',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['React', 'JavaScript', 'CSS', 'Node.js'],
-      email: 'brian@cesiontour2026.com',
+      email: 'brian.elmeskiri@viacesi.fr',
       linkedin: 'https://linkedin.com/in/brian',
       responsibilities: [
         'Développement du site web',
@@ -58,11 +56,11 @@ export default function Team() {
     },
     {
       name: 'Dimitri',
-      role: 'Designer Graphique',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Création des visuels et de l\'identité graphique du projet.',
+      role: 'Etudiant',
+      img: '/images/Dimitrique.png',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Photoshop', 'Illustrator', 'UI/UX Design', 'Branding'],
-      email: 'dimitri@cesiontour2026.com',
+      email: 'dimitri.kapolas@viacesi.fr',
       linkedin: 'https://linkedin.com/in/dimitri',
       responsibilities: [
         'Création de l\'identité visuelle',
@@ -73,11 +71,11 @@ export default function Team() {
     },
     {
       name: 'Paul',
-      role: 'Responsable Logistique',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Organisation des aspects pratiques du voyage et de l\'événement.',
+      role: 'Etudiant',
+      img: '/images/Paul.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Planification', 'Gestion d\'événements', 'Logistique', 'Coordination'],
-      email: 'paul@cesiontour2026.com',
+      email: 'paul.masson@viacesi.fr',
       linkedin: 'https://linkedin.com/in/paul',
       responsibilities: [
         'Planification du voyage',
@@ -88,11 +86,11 @@ export default function Team() {
     },
     {
       name: 'Evan',
-      role: 'Responsable Relations Publiques',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Gestion des relations avec les médias et les institutions.',
+      role: 'Etudiant',
+      img: '/images/Evan.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Relations publiques', 'Communication', 'Médias', 'Événementiel'],
-      email: 'evan@cesiontour2026.com',
+      email: 'evan.ferro-litoouti@viacesi.fr',
       linkedin: 'https://linkedin.com/in/evan',
       responsibilities: [
         'Relations avec les médias',
@@ -103,11 +101,11 @@ export default function Team() {
     },
     {
       name: 'Lucas',
-      role: 'Responsable Technique',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Gestion des aspects techniques et informatiques du projet.',
+      role: 'Etudiant',
+      img: '/images/Lucas.png',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['IT Support', 'Systèmes', 'Technologie', 'Maintenance'],
-      email: 'lucas@cesiontour2026.com',
+      email: 'lucas.thouvenot@viacesi.fr',
       linkedin: 'https://linkedin.com/in/lucas',
       responsibilities: [
         'Support technique',
@@ -118,11 +116,11 @@ export default function Team() {
     },
     {
       name: 'Hilel',
-      role: 'Responsable Documentation',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Création et gestion de la documentation du projet.',
+      role: 'Etudiant',
+      img: '/images/Hilel.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Rédaction', 'Documentation', 'Organisation', 'Archivage'],
-      email: 'hilel@cesiontour2026.com',
+      email: 'hilel.lahouari@viacesi.fr',
       linkedin: 'https://linkedin.com/in/hilel',
       responsibilities: [
         'Création de la documentation',
@@ -133,11 +131,11 @@ export default function Team() {
     },
     {
       name: 'Cédric',
-      role: 'Responsable Partenariats',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Développement des relations avec les entreprises partenaires.',
+      role: 'Etudiant',
+      img: '/images/Cedric.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Business Development', 'Négociation', 'Réseautage'],
-      email: 'cedric@cesiontour2026.com',
+      email: 'cedric.anassi@viacesi.fr',
       linkedin: 'https://linkedin.com/in/cedric',
       responsibilities: [
         'Recherche de nouveaux partenaires',
@@ -148,11 +146,11 @@ export default function Team() {
     },
     {
       name: 'Baptiste',
-      role: 'Responsable Logistique',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Organisation des aspects logistiques du projet.',
+      role: 'Etudiant',
+      img: '/images/Baptiste.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Planification', 'Organisation', 'Coordination', 'Gestion'],
-      email: 'baptiste@cesiontour2026.com',
+      email: 'baptiste.lambey@viacesi.fr',
       linkedin: 'https://linkedin.com/in/baptiste',
       responsibilities: [
         'Planification logistique',
@@ -163,11 +161,11 @@ export default function Team() {
     },
     {
       name: 'Guillaume',
-      role: 'Responsable Technique',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Gestion des aspects techniques avancés du projet.',
+      role: 'Etudiant',
+      img: '/images/Guillaume.png',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Technologie', 'Innovation', 'Développement', 'Recherche'],
-      email: 'guillaume@cesiontour2026.com',
+      email: 'guillaume.mansutti@viacesi.fr',
       linkedin: 'https://linkedin.com/in/guillaume',
       responsibilities: [
         'Recherche technologique',
@@ -178,11 +176,11 @@ export default function Team() {
     },
     {
       name: 'Mathis',
-      role: 'Responsable Relations Publiques',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Gestion des relations publiques et de la communication.',
+      role: 'Etudiant',
+      img: '/images/Mathis.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Communication', 'Relations publiques', 'Médias', 'Événementiel'],
-      email: 'mathis@cesiontour2026.com',
+      email: 'mathis.seiler@viacesi.fr',
       linkedin: 'https://linkedin.com/in/mathis',
       responsibilities: [
         'Communication externe',
@@ -193,11 +191,11 @@ export default function Team() {
     },
     {
       name: 'Enes',
-      role: 'Responsable Finances',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Gestion financière et budgétaire du projet.',
+      role: 'Etudiant',
+      img: '/images/Enes.png',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Gestion financière', 'Comptabilité', 'Budget', 'Analyse'],
-      email: 'enes@cesiontour2026.com',
+      email: 'enes.karakaya@viacesi.fr',
       linkedin: 'https://linkedin.com/in/enes',
       responsibilities: [
         'Gestion du budget',
@@ -208,11 +206,11 @@ export default function Team() {
     },
     {
       name: 'Emmanuelle',
-      role: 'Responsable Relations Publiques',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Coordination des relations publiques et communication.',
+      role: 'Etudiante',
+      img: '/images/Emmanuelle.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Communication', 'Coordination', 'Relations publiques', 'Organisation'],
-      email: 'emmanuelle@cesiontour2026.com',
+      email: 'emmanuelle.probst@viacesi.fr',
       linkedin: 'https://linkedin.com/in/emmanuelle',
       responsibilities: [
         'Coordination des communications',
@@ -223,11 +221,11 @@ export default function Team() {
     },
     {
       name: 'Joris',
-      role: 'Responsable Documentation',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Gestion et organisation de la documentation du projet.',
+      role: 'Etudiant',
+      img: '/images/Joris.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Documentation', 'Organisation', 'Archivage', 'Rédaction'],
-      email: 'joris@cesiontour2026.com',
+      email: 'joris.barnard@viacesi.fr',
       linkedin: 'https://linkedin.com/in/joris',
       responsibilities: [
         'Organisation de la documentation',
@@ -238,11 +236,11 @@ export default function Team() {
     },
     {
       name: 'Loris',
-      role: 'Responsable Relations Publiques',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Développement des relations publiques et communication.',
+      role: 'Etudiant',
+      img: '/images/Loris.jpg',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Relations publiques', 'Communication', 'Médias', 'Événementiel'],
-      email: 'loris@cesiontour2026.com',
+      email: 'loris.belgeri@viacesi.fr',
       linkedin: 'https://linkedin.com/in/loris',
       responsibilities: [
         'Développement des relations publiques',
@@ -253,11 +251,11 @@ export default function Team() {
     },
     {
       name: 'Maxime',
-      role: 'Responsable Relations Publiques',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Coordination des relations publiques et communication externe.',
+      role: 'Etudiant',
+      img: '/images/Maxime.png',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Coordination', 'Relations publiques', 'Communication', 'Gestion'],
-      email: 'maxime@cesiontour2026.com',
+      email: 'maxime.waechter@viacesi.fr',
       linkedin: 'https://linkedin.com/in/maxime',
       responsibilities: [
         'Coordination des relations publiques',
@@ -268,11 +266,11 @@ export default function Team() {
     },
     {
       name: 'Maxence',
-      role: 'Responsable Relations Publiques',
-      img: '/images/placeholder-avatar.svg',
-      desc: 'Gestion des relations publiques et communication institutionnelle.',
+      role: 'Etudiant',
+      img: '/images/Maxence.png',
+      desc: 'Je sais pas quoi mettre ici',
       skills: ['Relations publiques', 'Communication institutionnelle', 'Médias', 'Événementiel'],
-      email: 'maxence@cesiontour2026.com',
+      email: 'maxence.guenin@viacesi.fr',
       linkedin: 'https://linkedin.com/in/maxence',
       responsibilities: [
         'Gestion des relations publiques',
@@ -317,7 +315,7 @@ export default function Team() {
           <div className="row">
             <div className="col-lg-12 text-center mb-5">
               <h2 className="mb-4">Équipe de Direction</h2>
-              <p className="lead">Les quatre étudiants qui dirigent et coordonnent le projet</p>
+              <p className="lead">Les deux étudiants qui dirigent et coordonnent le projet</p>
             </div>
           </div>
           <div className="row justify-content-center">

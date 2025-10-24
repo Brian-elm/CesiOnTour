@@ -93,10 +93,10 @@ function HomePage() {
           </div>
           <div className="row">
             {[
-              { name: 'Hilel', role: 'Chef de Projet', img: '/images/Hilel.png', desc: 'Responsable de la coordination générale et de la logistique du voyage.' },
-              { name: 'Cédric', role: 'Responsable Communication', img: '/images/Cedric.png', desc: 'Gestion des réseaux sociaux et de la communication externe.' },
-              { name: 'Shein', role: 'Responsable Partenariats', img: '/images/Shein.png', desc: 'Développement des relations avec les entreprises partenaires.' },
-              { name: 'Dimitriq', role: 'Responsable Finances', img: '/images/Dimitrique.png', desc: 'Gestion du budget et de la collecte de fonds.' },
+              { name: 'Hilel', role: 'Etudiant', img: '/images/Hilel.jpg', desc: 'En recherche d\'alternance, aidez le svp URGENT !!!' },
+              { name: 'Cédric', role: 'Etudiant', img: '/images/Cedric.jpg', desc: 'Alternant chez Tiime' },
+              { name: 'Shirin', role: 'Etudiante', img: '/images/Shein.png', desc: 'Alternante au CHRU de Nancy' },
+              { name: 'Dimitri', role: 'Etudiant', img: '/images/Dimitrique.png', desc: 'Alternant chez GRDF' },
             ].map((m) => (
               <TeamCard key={m.name} {...m} />
             ))}
